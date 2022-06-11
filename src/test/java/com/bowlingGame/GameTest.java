@@ -36,7 +36,7 @@ public class GameTest {
 
     @Test
     void throwsForNegativeRoll(){
-        assertThatThrownBy(() -> game.roll(100))
+        assertThatThrownBy(() -> game.roll(-1))
                 .isInstanceOf(IllegalArgumentException.class);
     }
 
